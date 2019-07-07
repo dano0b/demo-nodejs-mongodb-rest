@@ -10,4 +10,4 @@ ENV PORT=3000
 ENV MONGODB_ADDON_URI=mongodb://<database_server>:27017/test
 EXPOSE 3000
 WORKDIR /app
-ENTRYPOINT ["/app/bin/www"]
+ENTRYPOINT ["npm", "start"]
